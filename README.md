@@ -6,13 +6,13 @@ This codebase enables **seamless ingestion of CSV files into Databricks** using 
 
 ## Features
 
-✅ **Automated CSV Ingestion**: Reads and loads CSV files into a Databricks Delta table.  
-✅ **Schema Enforcement**: Creates tables dynamically while ensuring data integrity.  
-✅ **Efficient Batch Processing**: Processes large datasets in chunks with parallel execution.  
-✅ **Multiprocessing Support**: Uses multiple processes to speed up ingestion.  
-✅ **Retry Mechanism**: Handles transient failures (HTTP 429, 503) with automatic retries.  
-✅ **SQL Injection Prevention**: Escapes values to prevent SQL injection attacks.  
-✅ **Error Logging**: Captures detailed error messages for debugging.  
+- **Automated CSV Ingestion**: Reads and loads CSV files into a Databricks Delta table.  
+- **Schema Enforcement**: Creates tables dynamically while ensuring data integrity.  
+- **Efficient Batch Processing**: Processes large datasets in chunks with parallel execution.  
+- **Multiprocessing Support**: Uses multiple processes to speed up ingestion.  
+- **Retry Mechanism**: Handles transient failures (HTTP 429, 503) with automatic retries.  
+- **SQL Injection Prevention**: Escapes values to prevent SQL injection attacks.  
+- **Error Logging**: Captures detailed error messages for debugging.  
 
 ## Prerequisites
 
@@ -82,11 +82,9 @@ with Pool(processes=num_processes) as pool:
 
 ## Best Practices
 
-🔹 **Use Delta Lake**: Ensures ACID compliance and schema evolution.  
-🔹 **Optimize Batch Size**: Adjust `chunk_size` based on system resources.  
-🔹 **Monitor Parallelism**: Tune `num_processes` for best performance.  
-🔹 **Validate Data Before Ingestion**: Prevents schema mismatches.  
+**Use Delta Lake**: Ensures ACID compliance and schema evolution.  
+**Optimize Batch Size**: Adjust `chunk_size` based on system resources.  
+**Monitor Parallelism**: Tune `num_processes` for best performance.  
+**Validate Data Before Ingestion**: Prevents schema mismatches.  
 
 ---
-
-🚀 **Optimized for scalable, production-grade Databricks data ingestion workflows.**  
