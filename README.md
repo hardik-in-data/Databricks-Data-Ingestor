@@ -1,4 +1,4 @@
-# Databricks Data Ingestion
+# Databricks Data Ingestor
 
 ## Overview
 
